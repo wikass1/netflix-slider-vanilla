@@ -2,7 +2,7 @@
 
 A netflix slider component written in vanilla javascript.
 
-:green_heart: ## [Live](https://netflix-slider-vanilla.vercel.app/)
+:green_heart: [Live](https://netflix-slider-vanilla.vercel.app/)
 
 ## Desktop view :
 
