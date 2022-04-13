@@ -11,6 +11,7 @@
 
 body {
   margin: 0;
+  font-family: "Darker Grotesque", sans-serif;
 }
 
 .container {
@@ -36,10 +37,20 @@ body {
   padding: var(--img-gap);
   border-radius: 1rem;
 }
+.slider > img:hover,
+img:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.slider > img:hover::after {
+  content: "SIEMA";
+  display: block;
+  width: 200px;
+}
 
 .handle {
   border: none;
-  border-radius: 1rem;
+  border-radius: 1.1rem;
   flex-grow: 0;
   flex-shrink: 0;
   background-color: rgba(255, 255, 255, 0.25);
@@ -68,11 +79,12 @@ body {
 
 .handle:hover,
 .handle:focus {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .text {
   transition: transform 150ms ease-in-out;
+  font-weight: 700;
 }
 
 .handle:hover .text,
